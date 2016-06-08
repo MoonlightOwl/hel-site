@@ -1,0 +1,40 @@
+{
+  "name": "hel-site",
+  "version": "1.0.0",
+  "description": "Hel repository web-site",
+  "main": "rollup.config.js",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-react": "^6.5.0",
+    "rollup": "^0.27.1",
+    "rollup-plugin-babel": "^2.5.1",
+    "rollup-plugin-commonjs": "^3.0.0",
+    "rollup-plugin-node-globals": "^1.0.5",
+    "rollup-plugin-node-resolve": "^1.7.0",
+    "rollup-plugin-npm": "^1.4.0",
+    "rollup-plugin-replace": "^1.1.0",
+    "rollup-plugin-uglify": "^0.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoonlightOwl/hel-site.git"
+  },
+  "scripts": {
+    "rollup": "rollup -c",
+    "rollup-pro": "rollup -c rollup.config.pro.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hel",
+    "repository",
+    "lua",
+    "oc"
+  ],
+  "author": "Totoro",
+  "license": "MIT"
+}
