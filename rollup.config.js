@@ -6,7 +6,7 @@ import replace from 'rollup-plugin-replace'
 import resolve from 'rollup-plugin-node-resolve'
 
 export default {
-  dest: 'bundle/app.js',
+  dest: 'bundle/app.min.js',
   entry: 'src/main.js',
   format: 'iife',
   plugins: [
