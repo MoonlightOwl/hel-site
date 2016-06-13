@@ -12,7 +12,7 @@ export default {
   plugins: [
     babel({
       babelrc: false,
-      exclude: 'node_modules/**',
+      exclude: ['node_modules/**', 'src/semantic.min.js'],
       presets: [ 'es2015-rollup', 'react' ]
     }),
     cjs({
