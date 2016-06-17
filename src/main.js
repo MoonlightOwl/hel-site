@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import jQuery from 'jquery'
 import './semantic.min.js'
+import List from './packages'
 
 console.info('Welcome to Hel!');
 
@@ -26,37 +27,38 @@ var Dash = React.createClass({
           <div className="right item">
             <div className="ui red button">Log-in</div>
           </div>
-          <div className="ui simple dropdown item">
-            Profile
-            <i className="dropdown icon"></i>
-            <div className="menu">
-              <a className="item"><i className="edit icon"></i> Edit Profile</a>
-              <a className="item"><i className="globe icon"></i> Choose Language</a>
-              <a className="item"><i className="sign out icon"></i> Logout</a>
-            </div>
-          </div>
         </div>
       </div>
     );
   }
 });
 
-var List = React.createClass({
+var Greeting = React.createClass({
   render: function() {
     return (
-      <div className="ui segment">
-        <p>Welcome to Hel Repository!</p>
+      <div className="ui negative message">
+        <i className="close icon"></i>
+        <div className="header">
+          Welcome to Hel Package Repository!
+        </div>
+        <p></p>
       </div>
     );
   }
 });
 
 var Hel = React.createClass({
+  style: {
+    padding: 20
+  },
   render: function() {
     return (
       <div className="app">
         <Dash />
-        <List />
+        <div style={this.style} className="space">
+          <Greeting />
+          <List />
+        </div>
       </div>
     );
   }
