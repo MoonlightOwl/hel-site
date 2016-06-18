@@ -1,5 +1,5 @@
 import React from 'react'
-import './semantic.min.js'
+import { PackageModel, PackageCollection } from '../data/package'
 
 class Card extends React.Component {
   render() {
@@ -7,7 +7,6 @@ class Card extends React.Component {
       height: 200,
       objectFit: 'cover'
     } : {};
-    console.debug(style);
     return (
       <div className="ui card">
         <div className="image">
@@ -35,6 +34,10 @@ class Card extends React.Component {
 }
 
 class List extends React.Component {
+  componentWillMount() {
+    this.collection = new PackageCollection();
+    this.collection.fetch();
+  }
   render() {
     return (
       <div className="ui two stackable cards">

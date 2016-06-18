@@ -12,13 +12,15 @@ export default {
   plugins: [
     babel({
       babelrc: false,
-      exclude: ['node_modules/**', 'src/semantic.min.js'],
+      exclude: ['node_modules/**', 'src/lib/semantic.min.js'],
       presets: [ 'es2015-rollup', 'react' ]
     }),
     cjs({
       exclude: 'node_modules/process-es6/**',
       include: [
+        'node_modules/backbone/**',
         'node_modules/fbjs/**',
+        'node_modules/jquery/**',
         'node_modules/object-assign/**',
         'node_modules/react/**',
         'node_modules/react-dom/**'
