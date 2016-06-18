@@ -1,13 +1,14 @@
+import './jquery-global.js'
+import List from './packages'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import jQuery from 'jquery'
 import './semantic.min.js'
-import List from './packages'
+import './dom.js'
 
 console.info('Welcome to Hel!');
 
-var Dash = React.createClass({
-  render: function() {
+class Dash extends React.Component {
+  render() {
     return (
       <div className="ui attached stackable inverted menu">
         <div className="ui container">
@@ -31,7 +32,7 @@ var Dash = React.createClass({
       </div>
     );
   }
-});
+}
 
 var Greeting = React.createClass({
   render: function() {
