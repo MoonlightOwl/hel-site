@@ -1,5 +1,5 @@
 # Hel repository web-site
-As for the repository itself, you can find it here: [MoonlightOwl/hel](https://github.com/MoonlightOwl/hel)
+As for the repository itself, you can find it here: [hel-repo/hel](https://github.com/hel-repo/hel)
 
 The `bundle/` directory contains ready-to-deploy site files.
 
